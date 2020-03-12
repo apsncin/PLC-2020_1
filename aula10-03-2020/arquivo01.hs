@@ -76,7 +76,6 @@ addEspacos 0 = ""
 addEspacos n = " " ++ addEspacos (n-1)
 
 paraDireita :: Int -> String -> String
-paraDireita 0 s = s
 paraDireita n s = addEspacos n ++ s
 
 mediaVendas :: Int -> Int
@@ -96,5 +95,3 @@ tabelaVendas n = "Semana" ++ addEspacos 3 ++ "Vendas" ++ "\n"
 
 imprimeTabela :: Int -> IO()
 imprimeTabela n = putStr (tabelaVendas n)
-
-            
